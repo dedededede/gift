@@ -1,4 +1,4 @@
-﻿document.write('<div id="htright" class="float_r align_r"></div>');
+document.write('<div id="htright" class="float_r align_r"></div>');
 function show_student_time(){ 
 window.setTimeout("show_student_time()", 1000); 
 BirthDay=new Date("2010/04/12");
@@ -20,5 +20,4 @@ seconds=Math.floor((e_minsold-minsold)*60);
 
 	htright.innerHTML='<font  color=#00ffff>已经相恋 '+daysold+'天 '+hrsold+'小时'+minsold+'分'+seconds+'秒</font><DIV style="DISPLAY: none">';
 	} 
-
 show_student_time(); 
