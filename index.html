@@ -11,9 +11,20 @@
 </head>
 
 <body>
-<audio autoplay="autopaly">
-<source src="93me/93me.mp3" type="audio/mp3" />
-</audio>
+
+
+<audio style="display:none; height: 0" id="bg-music" preload="auto" src="93me/93me.mp3" loop="loop"></audio>
+document.addEventListener('DOMContentLoaded', function () {
+function audioAutoPlay() {
+var audio = document.getElementById('bg-music');
+audio.play();
+document.addEventListener("WeixinJSBridgeReady", function () {
+audio.play();
+}, false);
+}
+audioAutoPlay();
+});
+
 <div id="mainDiv">
 <div id="content">
 <div id="code">
