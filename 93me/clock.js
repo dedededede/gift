@@ -1,4 +1,4 @@
-document.write('<div id="htright" class="float_r align_r"></div>');
+ï»¿document.write('<div id="htright" class="float_r align_r"></div>');
 function show_student_time(){ 
 window.setTimeout("show_student_time()", 1000); 
 BirthDay=new Date("2010/04/12");
@@ -18,6 +18,7 @@ e_minsold=(e_hrsold-hrsold)*60;
 minsold=Math.floor((e_hrsold-hrsold)*60); 
 seconds=Math.floor((e_minsold-minsold)*60); 
 
-	htright.innerHTML='<font  color=#00ffff>ÒÑ¾­ÏàÁµ '+daysold+'Ìì '+hrsold+'Ğ¡Ê±'+minsold+'·Ö'+seconds+'Ãë</font><DIV style="DISPLAY: none">';
+	htright.innerHTML='<font  color=#00ffff>å·²ç»ç›¸æ‹ '+daysold+'å¤© '+hrsold+'å°æ—¶'+minsold+'åˆ†'+seconds+'ç§’</font><DIV style="DISPLAY: none">';
 	} 
+
 show_student_time(); 
