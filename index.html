@@ -14,18 +14,24 @@
 
 
 <audio src="93me/93me.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>
-<script type="text/javascript">
-    function audioAutoPlay(id){
 
-    var audio = document.getElementById(id);
+<script type="text/javascript">
+   function audioAutoPlay(id){
+    var audio = document.getElementById(id),
+        play = function(){
+            audio.play();
+            document.removeEventListener("touchstart",play, false);
+        };
     audio.play();
     document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
+        play();
     }, false);
     document.addEventListener('YixinJSBridgeReady', function() {
-        audio.play();
+        play();
     }, false);
+    document.addEventListener("touchstart",play, false);
 }
+
 
 </script>
 
