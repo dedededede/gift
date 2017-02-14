@@ -16,10 +16,12 @@ sc();
 }
 document.onmousedown=sc
 document.ondblclick=initialize
-function getUrlParam1(name){nk="亲爱的小明，情人节快乐";
+function getUrlParam1(name){
+	nk="亲爱的小明，情人节快乐";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
-if (r!=null) return unescape(r[2]);return nk;
+if (r!=null) return unescape(r[2]);
+return nk;
 }  
 function getUrlParam3(name){
 	nk="";
