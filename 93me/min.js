@@ -16,7 +16,7 @@ sc();
 }
 document.onmousedown=sc
 document.ondblclick=initialize
-function getUrlParam1(name){nk="Ç×°®µÄĞ¡Ã÷£¬ÇéÈË½Ú¿ìÀÖ";
+function getUrlParam1(name){nk="äº²çˆ±çš„å°æ˜ï¼Œæƒ…äººèŠ‚å¿«ä¹";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;
@@ -28,7 +28,7 @@ var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;
 }  
 function getUrlParam2(name){
-	nk="ÕÅµÄµÄ";
+	nk="å¼ çš„çš„";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;
