@@ -17,7 +17,7 @@ sc();
 document.onmousedown=sc
 document.ondblclick=initialize
 function getUrlParam1(name){
-	nk="亲爱的小明，情人节快乐";
+	nk="亲爱的小猪，情人节快乐";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);
