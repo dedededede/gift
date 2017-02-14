@@ -16,49 +16,27 @@
 
 <audio src="93me/93me.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>
 
-<script type="text/javascript">
-   function audioAutoPlay(id){
-    var audio = document.getElementById(id),
-        play = function(){
-            audio.play();
-            document.removeEventListener("touchstart",play, false);
-        };
-    audio.play();
-    document.addEventListener("WeixinJSBridgeReady", function () {
-        play();
-    }, false);
-    document.addEventListener('YixinJSBridgeReady', function() {
-        play();
-    }, false);
-    document.addEventListener("touchstart",play, false);
-}
 
-
-</script>
-
-audioAutoPlay('Jaudio');
 
 <script type="text/javascript">
     function autoPlayAudio1() {
-wx.config({
-// 配置信息, 即使不正确也能使用 wx.ready
-debug: false,
-appId: '',
-timestamp: 1,
-nonceStr: '',
-signature: '',
-jsApiList: []
-});
-wx.ready(function() {
-document.getElementById('Jaudio').play();
-});
-}
+        wx.config({
+            // 配置信息, 即使不正确也能使用 wx.ready
+            debug: false,
+            appId: '',
+            timestamp: 1,
+            nonceStr: '',
+            signature: '',
+            jsApiList: []
+        });
+        wx.ready(function() {
+            document.getElementById('Jaudio').play();
+        });
+    }
     autoPlayAudio1();
+
+
 </script>
-
-
-
-
 
 <div id="mainDiv">
 <div id="content">
