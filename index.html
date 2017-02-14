@@ -14,16 +14,17 @@
 
 
 <audio style="display:none; height: 0" id="bg-music" preload="auto" src="93me/93me.mp3" loop="loop"></audio>
-document.addEventListener('DOMContentLoaded', function () {
-function audioAutoPlay() {
-var audio = document.getElementById('bg-music');
-audio.play();
-document.addEventListener("WeixinJSBridgeReady", function () {
-audio.play();
-}, false);
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+    document.addEventListener('YixinJSBridgeReady', function() {
+        audio.play();
+    }, false);
 }
-audioAutoPlay();
-});
+audioAutoPlay('Jaudio');
 
 <div id="mainDiv">
 <div id="content">
