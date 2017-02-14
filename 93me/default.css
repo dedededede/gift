@@ -70,6 +70,12 @@ body {
 	font-size: 12px
 }
 
+#codetop {
+	top: 10px;
+	width: 200px;
+	height: 100px;
+}
+
 #code .string {
 	color: #2a36ff
 }
